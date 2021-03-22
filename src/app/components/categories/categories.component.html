@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Libell</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let categorie of categories ">
+                    <td scope="row ">{{categorie.id}}</td>
+                    <td scope="row ">{{categorie.libelle}}</td>
+                    <td><button type="button" class="btn btn-outline-primary">Action</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
